@@ -1,4 +1,5 @@
 module.exports = sanitize;
+module.exports.async = async;
 
 function sanitize () {
   var fields = Array.prototype.slice.call(arguments);
@@ -14,5 +15,13 @@ function sanitize () {
     }
 
     return result;
+  };
+}
+
+function async () {
+  var sanitizer = sanitize.apply(undefined, arguments);
+
+  return function (source, callback) {
+    callback(undefined, sanitizer(source));
   };
 }
