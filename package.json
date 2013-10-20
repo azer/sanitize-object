@@ -1,6 +1,6 @@
 {
   "name": "sanitize-object",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Take only the fields you need from a JS object",
   "main": "index.js",
   "scripts": {
@@ -13,9 +13,9 @@
     "sanitize"
   ],
   "repository": {
-    "url": "git@github.com:azer\/sanitize-object.git",
+    "url": "git@github.com:azer/sanitize-object.git",
     "type": "git"
   },
-  "author": "Azer Ko\u00e7ulu <azer@kodfabrik.com>",
+  "author": "Azer Koçulu <azer@kodfabrik.com>",
   "license": "BSD"
 }
