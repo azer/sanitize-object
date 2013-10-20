@@ -1,6 +1,6 @@
 ## sanitize-object
 
-Take only the fields you need from a JS object
+Returns a new object with desired content from another source
 
 ## Install
 
