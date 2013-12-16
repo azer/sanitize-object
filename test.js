@@ -23,9 +23,10 @@ it('provides async api', function(done){
     qux: 789
   };
 
-  sanitize.async('foo', 'qux')(input, function (error, sanitized) {
+  sanitize.async('foo', 'qux', 'corge')(input, function (error, sanitized) {
     expect(sanitized.foo).to.equal(123);
     expect(sanitized.qux).to.equal(789);
+    expect(sanitized.hasOwnProperty('corge')).to.be.false;
     expect(Object.keys(sanitized).length).to.equal(2);
     expect(Object.keys(input).length).to.equal(3);
     done();

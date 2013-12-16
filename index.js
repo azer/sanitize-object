@@ -11,6 +11,7 @@ function sanitize () {
     var result = {};
 
     while (i --) {
+      if (!source.hasOwnProperty(fields[i])) continue;
       result[ fields[i] ] = source[fields[i]];
     }
 
