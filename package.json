@@ -4,10 +4,10 @@
   "description": "Take only the fields you need from a JS object",
   "main": "index.js",
   "scripts": {
-    "test": "fox"
+    "test": "prova"
   },
   "devDependencies": {
-    "fox": "*"
+    "prova": "*"
   },
   "keywords": [
     "sanitize"

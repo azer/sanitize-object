@@ -1,8 +1,10 @@
 module.exports = sanitize;
 module.exports.async = async;
 
-function sanitize () {
-  var fields = Array.prototype.slice.call(arguments);
+function sanitize (fields) {
+  if (typeof fields == 'string') {
+    fields = Array.prototype.slice.call(arguments);
+  }
 
   return function (source) {
     if (!source) return;
